@@ -1,0 +1,6 @@
+.nav_wrapper{
+    position: fixed;
+    bottom: 0;
+    background-color: var(--white-main);
+    width: 100%;
+}

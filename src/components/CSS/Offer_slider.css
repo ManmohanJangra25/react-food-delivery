@@ -1,0 +1,28 @@
+.offer_slider_heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer_slider_heading h2{
+    color: var(--main-black);
+    font-family: var(--poppins-font);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26.4px;
+    text-transform: capitalize;
+}
+
+.offer_slider_heading p{
+    color: var(--main-dark-orange);
+    font-family: var(--mulish-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.offer_slider_heading p span{
+    margin-left: 6px;
+}

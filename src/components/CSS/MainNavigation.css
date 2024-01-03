@@ -1,0 +1,23 @@
+.main_navigation_header{}
+.main_navigation_list{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.main_navigation_list_item a{
+    text-decoration: none;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_navigation_list_item:hover > a, .main_navigation_list_item a.active{
+    color: var(--main-orange);
+}
+
+.main_navigation_list_item:hover > a svg path, .main_navigation_list_item a.active > svg path{
+    fill: var(--main-orange);
+}
