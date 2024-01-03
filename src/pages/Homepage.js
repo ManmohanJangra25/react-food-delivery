@@ -1,6 +1,7 @@
 import "./css/Homepage.css";
 import HomeHeader from "../components/header/HomeHeader";
 import Offer_slider from "../components/Offer/Offer_slider";
+import RestaurantsList from "../components/restaurants/RestaurantsList";
 
 const Homepage = () => {
   const urlPath = window.location.pathname;
@@ -10,9 +11,14 @@ const Homepage = () => {
         <div className="common_header">
           <HomeHeader />
         </div>
-        <div className="offer_slider">
-          <Offer_slider />
-        </div>
+        <main className="home_main_wrapper">
+          <div className="offer_slider">
+            <Offer_slider />
+          </div>
+          <div className="restaurant_list">
+            <RestaurantsList />
+          </div>
+        </main>
       </>
     );
   }

@@ -76,12 +76,10 @@
 
 .cat_slider_item:hover .cat_slider_img{
     filter: hue-rotate(115deg);
-    /* transition: all 0.2s linear; */
 }
 
 .cat_slider_item:hover a .cat_slider_text p{
     color: var(--main-orange);
-    transition: all 0.2s linear;
 }
 
 .cat_slider_item a.active .cat_slider_text p{

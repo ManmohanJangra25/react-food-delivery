@@ -13,6 +13,7 @@ const MainRouter = [
             {path: '/search', element: <div>SEARCH</div>, routeName: 'search'},
             {path: '/order', element: <div>Order</div>, routeName: 'order'},
             {path: '/profile', element: <div>Profile</div>, routeName: 'profile'},
+            {path: '/category/:catId', element: <div>Category</div>, routeName: 'category'},
         ],
     },
 ]

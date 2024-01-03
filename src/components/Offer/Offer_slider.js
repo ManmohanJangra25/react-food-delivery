@@ -1,4 +1,5 @@
 import "../CSS/Offer_slider.css";
+import Offer_carousel from "./Offer_carousel";
 
 const Offer_slider = () => {
   return (
@@ -33,6 +34,9 @@ const Offer_slider = () => {
           </span>
         </p>
       </div>
+
+      {/* Offer Carousel */}
+      <Offer_carousel/>
     </>
   );
 };

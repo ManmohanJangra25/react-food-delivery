@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: var(--main-grey);
 }
 
 .main_navigation_list_item:hover > a, .main_navigation_list_item a.active{
