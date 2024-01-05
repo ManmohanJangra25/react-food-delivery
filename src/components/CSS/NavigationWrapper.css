@@ -3,4 +3,5 @@
     bottom: 0;
     background-color: var(--white-main);
     width: 100%;
+    z-index: var(--footer-z-index);
 }

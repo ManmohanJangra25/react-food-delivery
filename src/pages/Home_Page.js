@@ -3,7 +3,7 @@ import HomeHeader from "../components/header/HomeHeader";
 import Offer_slider from "../components/Offer/Offer_slider";
 import RestaurantsList from "../components/restaurants/RestaurantsList";
 
-const Homepage = () => {
+const HomePage = () => {
   const urlPath = window.location.pathname;
   if (urlPath === "/") {
     return (
@@ -24,4 +24,4 @@ const Homepage = () => {
   }
 };
 
-export default Homepage;
+export default HomePage;

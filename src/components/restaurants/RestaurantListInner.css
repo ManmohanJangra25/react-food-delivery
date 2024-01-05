@@ -1,0 +1,98 @@
+.restaurant_lists{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 140px;
+    border-radius: 5px;
+    background-color: var(--white-main);
+    margin-bottom: 12px;
+}
+
+.restaurant_list_left{
+    position: relative;
+    height: 140px;
+    width: 43%;
+}
+
+.restaurant_list_img{
+    height: 100%;
+    background: var(--common-grey);
+    border-radius: 5px 0 0 5px;
+}
+
+.restaurant_list_rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 4px 12px;
+    border-radius: 0 0 5px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--white-main);
+}
+
+.restaurant_list_rating p{
+    color: var(---main-black);
+    font-family: var(--mulish-font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.restaurant_list_right{
+    width: 60%;
+}
+
+.restaurant_name_type{
+    padding-top: 24px;
+    padding-bottom: 20px;
+}
+
+.restaurant_title{
+    color: var(---main-black);
+    font-family: var(--poppins-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21.6px;
+    text-transform: capitalize;
+}
+
+.restaurant_food_type{
+    color: var(--main-grey);
+    font-family: var(--mulish-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.restaurant_delivery_distance{
+    display: flex;
+    padding-bottom: 24px;
+}
+
+.delivery_distance{
+    color: var(--main-grey);
+    font-family: var(--mulish-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.delivery_charges{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    gap: 5px;
+    color: var(--main-dark-orange);
+    font-family: var(--mulish-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+}

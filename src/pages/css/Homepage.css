@@ -1,8 +1,7 @@
 .common_header{
     background-image: url('/public/images/header_background.png');
     max-height: 80px;
-    width: 100%;
-    padding: 20px 25px 36px 25px;
+    padding: 20px 0 36px 25px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -11,4 +10,5 @@
 
 .home_main_wrapper{
     padding: 20px 25px;
+    margin-bottom: 70px;
 }

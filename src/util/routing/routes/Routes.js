@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import RootElement from "../../root/Root";
-import Homepage from "../../../pages/Homepage";
+import HomePage from "../../../pages/Home_Page";
 
 // For The Main Navigations
 const MainRouter = [
@@ -9,7 +9,7 @@ const MainRouter = [
         element: <RootElement />,
         errorElement: <div>Error</div>,
         children: [
-            {path: '/', element: <Homepage />, routeName: 'Home'},
+            {path: '/', element: <HomePage />, routeName: 'Home'},
             {path: '/search', element: <div>SEARCH</div>, routeName: 'search'},
             {path: '/order', element: <div>Order</div>, routeName: 'order'},
             {path: '/profile', element: <div>Profile</div>, routeName: 'profile'},

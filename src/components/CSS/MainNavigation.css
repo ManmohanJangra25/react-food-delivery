@@ -1,4 +1,7 @@
-.main_navigation_header{}
+.main_navigation_header{
+    position: relative;
+    z-index: 99999;
+}
 .main_navigation_list{
     display: flex;
     list-style: none;
