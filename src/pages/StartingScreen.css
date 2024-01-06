@@ -1,0 +1,32 @@
+.auth_wrapper{
+    height: -webkit-fill-available;
+    width: 100vw;
+    background: url('/public/images/BG.png') no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 75px;
+    position: fixed;
+    opacity: 1;
+    animation: fadeOut 500ms ease-in-out 1300ms 1 forwards;
+}
+
+@keyframes fadeOut {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+.app_Name p{
+    color: var(--white-main);
+    text-align: center;
+    font-family: var(--poppins-font);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%; /* 28px */
+}
