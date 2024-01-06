@@ -1,5 +1,5 @@
 import "../CSS/Offer_slider.css";
-import Offer_carousel from "./Offer_carousel";
+import OfferCarousel from "./Offer_carousel";
 
 const Offer_slider = () => {
   return (
@@ -16,13 +16,13 @@ const Offer_slider = () => {
               viewBox="0 0 6 10"
               fill="none"
             >
-              <g clip-path="url(#clip0_118_4862)">
+              <g clipPath="url(#clip0_118_4862)">
                 <path
                   d="M1 9L5 5L1 1"
                   stroke="#E83939"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </g>
               <defs>
@@ -36,7 +36,7 @@ const Offer_slider = () => {
       </div>
 
       {/* Offer Carousel */}
-      <Offer_carousel/>
+      <OfferCarousel/>
     </>
   );
 };

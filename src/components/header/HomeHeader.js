@@ -1,8 +1,32 @@
 import "../CSS/HomeHeader.css";
 import catArray from "../../category.json";
 import { NavLink } from "react-router-dom";
+import CarouselSlider from "../carousel_slider/CarouselSlider";
 
 const HomeHeader = () => {
+  const responsive = {
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 5,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 5,
+    },
+  };
+  const catSlider = catArray.categories.map((cat) => (
+    <div key={cat.name} className="cat_slider_item">
+      <NavLink to={`/category/${cat}`}>
+        <div
+          className="cat_slider_img"
+          style={{ backgroundImage: `url(${cat.img})` }}
+        ></div>
+        <div className="cat_slider_text">
+          <p>{cat.name}</p>
+        </div>
+      </NavLink>
+    </div>
+  ));
   return (
     <div className="home_header">
       <div className="header_details">
@@ -21,13 +45,13 @@ const HomeHeader = () => {
                 viewBox="0 0 8 13"
                 fill="none"
               >
-                <g clip-path="url(#clip0_113_2913)">
+                <g clipPath="url(#clip0_113_2913)">
                   <path
                     d="M2 11.3L6.8 6.49995L2 1.69995"
                     stroke="white"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </g>
                 <defs>
@@ -47,19 +71,7 @@ const HomeHeader = () => {
       </div>
 
       <div className="category_slider">
-        {catArray.categories.map((cat) => (
-          <div className="cat_slider_item">
-            <NavLink to={`/category/${cat}`}>
-              <div
-                className="cat_slider_img"
-                style={{ backgroundImage: `url(${cat.img})` }}
-              ></div>
-              <div className="cat_slider_text">
-                <p>{cat.name}</p>
-              </div>
-            </NavLink>
-          </div>
-        ))}
+        <CarouselSlider responsive={responsive} slider={catSlider}></CarouselSlider>
       </div>
     </div>
   );

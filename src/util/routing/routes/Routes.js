@@ -3,7 +3,7 @@ import RootElement from "../../root/Root";
 import HomePage from "../../../pages/Home_Page";
 import Authentication from "../../auth/Authentication";
 
-let isAuthenticated = false;
+let isAuthenticated = true;
 // For The Main Navigations
 const MainRouter = [
     {

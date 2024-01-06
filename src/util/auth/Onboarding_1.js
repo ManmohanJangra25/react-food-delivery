@@ -40,13 +40,13 @@ const Onboarding_1 = () => {
                   viewBox="0 0 6 10"
                   fill="none"
                 >
-                  <g clip-path="url(#clip0_117_4292)">
+                  <g clipPath="url(#clip0_117_4292)">
                     <path
                       d="M1 9L5 5L1 1"
                       stroke="#E83939"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </g>
                   <defs>
@@ -92,13 +92,13 @@ const Onboarding_1 = () => {
               viewBox="0 0 8 14"
               fill="none"
             >
-              <g clip-path="url(#clip0_219_233)">
+              <g clipPath="url(#clip0_219_233)">
                 <path
                   d="M7 13L1 7L7 1"
                   stroke="#222222"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </g>
               <defs>
@@ -119,13 +119,13 @@ const Onboarding_1 = () => {
                   viewBox="0 0 6 10"
                   fill="none"
                 >
-                  <g clip-path="url(#clip0_117_4292)">
+                  <g clipPath="url(#clip0_117_4292)">
                     <path
                       d="M1 9L5 5L1 1"
                       stroke="#E83939"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </g>
                   <defs>
@@ -171,13 +171,13 @@ const Onboarding_1 = () => {
               viewBox="0 0 8 14"
               fill="none"
             >
-              <g clip-path="url(#clip0_219_233)">
+              <g clipPath="url(#clip0_219_233)">
                 <path
                   d="M7 13L1 7L7 1"
                   stroke="#222222"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </g>
               <defs>

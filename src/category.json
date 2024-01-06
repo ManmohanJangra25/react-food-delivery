@@ -24,6 +24,31 @@
             "id": "Cupcake",
             "name": "Cupcake",
             "img": "/images/icons/burger.png"
+        },
+        {
+            "id": "Burger",
+            "name": "Burger",
+            "img": "/images/icons/burger.png"
+        },
+        {
+            "id": "Salads",
+            "name": "Salads",
+            "img": "/images/icons/salad.png"
+        },
+        {
+            "id": "Pizza",
+            "name": "Pizza",
+            "img": "/images/icons/pizza.png"
+        },
+        {
+            "id": "Pasta",
+            "name": "Pasta",
+            "img": "/images/icons/spaghetti.png"
+        },
+        {
+            "id": "Cupcake",
+            "name": "Cupcake",
+            "img": "/images/icons/burger.png"
         }
     ]
  }

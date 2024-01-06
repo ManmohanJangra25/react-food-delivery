@@ -43,13 +43,13 @@
 /* Category Slider */
 
 .category_slider{
-    display: flex;
+    /* display: flex; */
     position: relative;
-    gap: 10px;
+    /* gap: 10px; */
     margin-top: 5px;
     padding-top: 20px;
-    overflow-x: scroll;
-    overflow-y: visible;
+    /* overflow-x: scroll;
+    overflow-y: visible; */
 }
 
 .cat_slider_img{
@@ -84,4 +84,11 @@
 
 .cat_slider_item a.active .cat_slider_text p{
     color: var(--main-orange);
+}
+
+.cat_slider_item a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
