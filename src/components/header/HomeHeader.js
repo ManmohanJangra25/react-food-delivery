@@ -35,7 +35,7 @@ const HomeHeader = () => {
           <h5 className="user_addr_heading">Deliver To:</h5>
           <p className="user_addr">
             <span className="deliver_addr">
-              8000 S Kirkland Ave, Chicago, IL ...
+              25/277 Nai Basti Bahadurgarh ...
             </span>
             <span className="addr_arrow">
               <svg
