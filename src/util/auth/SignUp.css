@@ -1,6 +1,6 @@
 .authWrapper {
     background-color: var(--main-background);
-    padding: 70px 28px 0 28px;
+    padding: 70px 28px 28px 28px;
   }
   
   .login_title h1 {

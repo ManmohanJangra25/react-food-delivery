@@ -5,10 +5,40 @@ const SignUp = () => {
     return (
         <main className="authWrapper">
           <div className="login_title">
-            <h1>Sign In</h1>
+            <h1>Sign up</h1>
           </div>
           <div className="loginForm">
             <Form>
+            <div className="input_lable">
+                <label>Name</label>
+                <div className="input_field">
+                  <input type="text" placeholder="Name" />
+                  <span className="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="10"
+                      viewBox="0 0 14 10"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_242_1673)">
+                        <path
+                          d="M12.3334 1L5.00002 8.33333L1.66669 5"
+                          stroke="#00824B"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_242_1673">
+                          <rect width="14" height="10" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </div>
+              </div>
               <div className="input_lable">
                 <label>Email</label>
                 <div className="input_field">
@@ -76,12 +106,49 @@ const SignUp = () => {
                   </span>
                 </div>
               </div>
-              <Link className="forgetPass">Forgot your password?</Link>
-              <button className="auth_btn">Sign In</button>
+              <div className="input_lable">
+                <label>Confirm Password</label>
+                <div className="input_field">
+                  <input type="password" placeholder="Confirm Password" />
+                  <span className="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_242_1719)">
+                        <path
+                          d="M9.41335 9.41331C9.23025 9.60981 9.00945 9.76741 8.76412 9.87673C8.51879 9.98604 8.25395 10.0448 7.98541 10.0496C7.71687 10.0543 7.45013 10.0049 7.20109 9.9043C6.95206 9.80371 6.72583 9.654 6.53592 9.46408C6.346 9.27416 6.19628 9.04794 6.09569 8.7989C5.9951 8.54987 5.9457 8.28312 5.95044 8.01458C5.95518 7.74604 6.01396 7.48121 6.12327 7.23587C6.23258 6.99054 6.39019 6.76974 6.58669 6.58664M11.96 11.96C10.8204 12.8286 9.43276 13.3099 8.00002 13.3333C3.33335 13.3333 0.666687 7.99998 0.666687 7.99998C1.49595 6.45457 2.64611 5.10438 4.04002 4.03998L11.96 11.96ZM6.60002 2.82664C7.05891 2.71923 7.52873 2.66554 8.00002 2.66664C12.6667 2.66664 15.3334 7.99998 15.3334 7.99998C14.9287 8.75705 14.4461 9.4698 13.8934 10.1266L6.60002 2.82664Z"
+                          stroke="#7D849A"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M0.666687 0.666626L15.3334 15.3333"
+                          stroke="#7D849A"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_242_1719">
+                          <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <Link className="forgetPass" to={'/auth?mode=forgot-password'}>Forgot your password?</Link>
+              <button className="auth_btn">Sign Up</button>
             </Form>
             <div>
               <p className="noAccount">
-                Don't have an account? <Link>Sign Up</Link>
+              Already have an account? <Link to={'/auth?mode=login'}>Sign in.</Link>
               </p>
             </div>
           </div>

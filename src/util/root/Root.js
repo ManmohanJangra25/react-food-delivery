@@ -17,7 +17,7 @@ export default RootElement;
 export function checkAuthLoader(){
   const token = false;
   if(!token){
-    return redirect('/signup');
+    return redirect('/auth');
   }
   return null;
 }

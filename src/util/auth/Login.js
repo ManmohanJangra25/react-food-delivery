@@ -76,12 +76,12 @@ const Login = () => {
               </span>
             </div>
           </div>
-          <Link className="forgetPass">Forgot your password?</Link>
+          <Link className="forgetPass" to={'/auth?mode=forgot-password'}>Forgot your password?</Link>
           <button className="auth_btn">Sign In</button>
         </Form>
         <div>
           <p className="noAccount">
-            Don't have an account? <Link>Sign Up</Link>
+            Don't have an account? <Link to={'/auth?mode=signup'}>Sign Up</Link>
           </p>
         </div>
       </div>
