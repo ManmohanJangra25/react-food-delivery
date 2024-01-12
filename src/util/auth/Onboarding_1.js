@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./Onboarding.css";
 
@@ -29,7 +30,7 @@ const Onboarding_1 = () => {
       <div className="onboarding_wrapper">
         <div className="onboarding_top">
           <div className="onboarding_back_btn"></div>
-          <div className="onboarding_skip_btn">
+          <Link to="/auth" className="onboarding_skip_btn">
             <p onClick={thirdHandler}>
               Skip{" "}
               <span>
@@ -57,7 +58,7 @@ const Onboarding_1 = () => {
                 </svg>
               </span>
             </p>
-          </div>
+          </Link>
         </div>
         <div className="onboarding_main">
           <div className="onboarding_content">
@@ -108,7 +109,7 @@ const Onboarding_1 = () => {
               </defs>
             </svg>
           </div>
-          <div onClick={thirdHandler} className="onboarding_skip_btn">
+          <Link to="/auth" className="onboarding_skip_btn">
             <p>
               Skip{" "}
               <span>
@@ -136,7 +137,7 @@ const Onboarding_1 = () => {
                 </svg>
               </span>
             </p>
-          </div>
+          </Link>
         </div>
         <div className="onboarding_main">
           <div className="onboarding_content">
@@ -203,9 +204,9 @@ const Onboarding_1 = () => {
             </div>
           </div>
           <div className="onboarding_btn">
-            <button onClick={thirdHandler} className="onboarding_btn_next">
+            <Link to="/auth" className="onboarding_btn_next">
               GET STARTED
-            </button>
+            </Link>
           </div>
         </div>
       </div>

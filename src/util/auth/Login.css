@@ -1,0 +1,147 @@
+.authWrapper {
+  background-color: var(--main-background);
+  padding: 70px 28px 0 28px;
+}
+
+.login_title h1 {
+  color: var(--main-black);
+  /* headings/H1 */
+  font-family: var(--poppins-font);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+
+.loginForm {
+  margin-top: 40px;
+}
+
+.input_lable{
+    margin-bottom: 20px;
+}
+
+.input_lable label {
+  color: var(--main-grey);
+  font-family: var(--mulish-font);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.input_lable .input_field{
+    position: relative;
+}
+
+.input_lable .input_field input {
+  border: none;
+  border-bottom: 1px solid var(--light-grey);
+  background-color: var(--main-background);
+  width: 100%;
+  padding: 9px 0;
+  color: var(--main-black, #222);
+  font-family: var(--mulish-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.input_lable .input_field input:focus,
+.input_lable .input_field input:active,
+.input_lable .input_field input:focus-visible,
+.input_lable .input_field input:valid,
+.input_lable .input_field input:-webkit-autofill,
+.input_lable .input_field input:-webkit-autofill:hover,
+.input_lable .input_field input:-webkit-autofill:focus,
+.input_lable .input_field input:-webkit-autofill:active {
+  background-color: var(--main-background);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.input_lable .input_field .icon{
+    position: absolute;
+    right: 10px;
+    top: 8px;
+}
+
+.forgetPass{
+    color: var(--main-dark-orange);
+    text-align: right;
+    font-family: var(--mulish-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: block;
+}
+
+.loginForm .auth_btn{
+    background-image: url('/public/images/button_corner.png'), linear-gradient(103deg, #FF7F56 0%, rgba(232, 57, 57, 0.80) 100%);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: var(--white-main);
+    font-family: var(--mulish-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.social_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 60px;
+}
+
+.social_login .fb{
+    height: 46px;
+    width: 46px;
+    border-radius: 50px;
+    border: 2px solid #3B5999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social_login .twitter{
+    height: 46px;
+    width: 46px;
+    border-radius: 50px;
+    border: 2px solid #55ACEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noAccount{
+    color: var(--main-grey);
+    font-family: var(--mulish-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.noAccount a{
+    color: var(--main-dark-orange);
+}

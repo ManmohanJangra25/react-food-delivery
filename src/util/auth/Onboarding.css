@@ -85,7 +85,7 @@
     width: 100%;
 }
 
-.onboarding_btn button{
+.onboarding_btn .onboarding_btn_next{
     background-image: url('/public/images/button_corner.png'), linear-gradient(103deg, #FF7F56 0%, rgba(232, 57, 57, 0.80) 100%);
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -103,4 +103,7 @@
     line-height: normal;
     text-transform: uppercase;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
