@@ -15,7 +15,7 @@ const RootElement = () => {
 export default RootElement;
 
 export function checkAuthLoader(){
-  const token = false;
+  const token = localStorage.getItem('token');
   if(!token){
     return redirect('/auth');
   }

@@ -145,3 +145,13 @@
 .noAccount a{
     color: var(--main-dark-orange);
 }
+
+.error_message{
+    color: #DD4B39;
+    font-family: var(--mulish-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: -10px;
+}

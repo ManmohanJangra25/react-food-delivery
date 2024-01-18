@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, redirect } from "react-router-dom";
 import { useState } from "react";
 import "./Onboarding.css";
 
@@ -23,7 +23,7 @@ const Onboarding_1 = () => {
     setState3(true);
   };
   const thirdHandler = () => {
-    console.log("final");
+    redirect('/auth');
   };
   if (state1) {
     return (

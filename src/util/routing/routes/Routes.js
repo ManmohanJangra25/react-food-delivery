@@ -1,9 +1,10 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, redirect } from "react-router-dom";
 import RootElement from "../../root/Root";
 import HomePage from "../../../pages/Home_Page";
 import Authentication from "../../auth/Authentication";
 import { checkAuthLoader } from "../../root/Root";
 import UserAuthentication from "../../../pages/User_authentication";
+import {action as authActions} from "../../../pages/User_authentication";
 // For The Main Navigations
 const MainRouter = [
     {
@@ -27,12 +28,14 @@ const MainRouter = [
     {
         path: '/auth',
         element: <UserAuthentication />,
-        routeName: 'login'
+        routeName: 'login',
+        action: authActions
     },
     {
-        path: '/forget-password',
-        element: <div>forget-password</div>,
-        routeName: 'forget-password'
+        path: '/logout',
+        routeName: 'logout',
+        element: <div>Logout</div>,
+        loader: () => {localStorage.removeItem('token'); return redirect('/')},
     },
 ]
 
