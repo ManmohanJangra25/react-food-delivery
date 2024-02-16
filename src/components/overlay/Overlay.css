@@ -1,0 +1,17 @@
+.overlay{
+    height: 100vh;
+    width: -webkit-fill-available;
+    background-color: var(--main-background);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999;
+    padding: 28px;
+}
+
+.overlay.show{
+    opacity: 1;
+    visibility: visible;
+}

@@ -1,0 +1,30 @@
+.profile_list_wrapper {
+  padding: 0 28px 28px 28px;
+}
+
+.profile_list {
+  list-style: none;
+  padding: 0;
+}
+
+.profile_list_item {
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.profile_list_item a {
+  color: var(--black-main, #222);
+  font-family: var(--mulish-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 19.2px */
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 20px 0;
+  background-image: url("/public/images/icons/button_corner_right.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+}

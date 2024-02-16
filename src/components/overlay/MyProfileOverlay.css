@@ -1,0 +1,62 @@
+.overlay_topbar {
+    padding: 16px 0;
+    position: relative;
+  }
+  
+  .overlay_topbar_back{
+    position: absolute;
+    left: 0;
+    top: 16px;
+    cursor: pointer;
+  }
+  
+  .overlay_topbar p {
+    text-align: center;
+    color: var(--main-black, #222);
+    text-align: center;
+    font-family: var(--poppins-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 21.6px */
+    text-transform: capitalize;
+  }
+  
+  .overlay_content_top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 40px 0;
+  }
+  
+  .overlay_content_top .profile_image{
+    height: 100px;
+    width: 100px;
+    background: var(--light-grey);
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  .overlay_content_top .profile_image .image_edit{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--main-grey);
+    height: 27px;
+    width: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    overflow: hidden;
+  }
+  
+  .overlay_content_top .profile_image .image_edit .image_edit_input{
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .overlay_content_top .profile_image .image_edit .edit_profile_icon{
+    margin-top: 3px;
+  }

@@ -5,6 +5,7 @@ import Authentication from "../../auth/Authentication";
 import { checkAuthLoader } from "../../root/Root";
 import UserAuthentication from "../../../pages/User_authentication";
 import {action as authActions} from "../../../pages/User_authentication";
+import Profile from "../../../pages/Profile";
 // For The Main Navigations
 const MainRouter = [
     {
@@ -16,7 +17,12 @@ const MainRouter = [
             {path: '/', element: <HomePage />, routeName: 'Home'},
             {path: '/search', element: <div>SEARCH</div>, routeName: 'search'},
             {path: '/order', element: <div>Order</div>, routeName: 'order'},
-            {path: '/profile', element: <div>Profile</div>, routeName: 'profile'},
+            {path: '/profile', element: <Profile />, routeName: 'profile'},
+            {path: '/order-history', element: <div>order-history</div>, routeName: 'order-history'},
+            {path: '/payment-method', element: <div>payment-method</div>, routeName: 'payment-method'},
+            {path: '/my-address', element: <div>my-address</div>, routeName: 'my-address'},
+            {path: '/my-promocodes', element: <div>my-promocodes</div>, routeName: 'my-promocodes'},
+            {path: '/my-favorites', element: <div>my-favorites</div>, routeName: 'my-favorites'},
             {path: '/category/:catId', element: <div>Category</div>, routeName: 'category'},
         ],
     },
