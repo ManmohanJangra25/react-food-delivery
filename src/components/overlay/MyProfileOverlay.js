@@ -1,8 +1,15 @@
 import { Form } from "react-router-dom";
 import Overlay from "./Overlay";
 import "./MyProfileOverlay.css";
+import { useState } from "react";
 
 const MyProfileOverlay = (props) => {
+
+  const [profileImage, setProfileImage] = useState('var(--light-grey)');
+  const profileImageHandle = (e) => {
+    setProfileImage(URL.createObjectURL(e.target.files[0]));
+  }
+
   return (
     <Overlay showOverlay={props.isShowOverlay}>
       <div className="overlay_topbar">
@@ -37,7 +44,7 @@ const MyProfileOverlay = (props) => {
       </div>
       <div className="overlay_content">
         <div className="overlay_content_top">
-          <div className="profile_image">
+          <div className="profile_image" style={{ background: `url(${profileImage}) center center` }}>
             <span className="image_edit">
               <span className="edit_profile_icon">
                 <svg
@@ -67,6 +74,7 @@ const MyProfileOverlay = (props) => {
                 className="image_edit_input"
                 type="file"
                 name="profile_image"
+                onChange={profileImageHandle}
               ></input>
             </span>
           </div>

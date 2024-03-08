@@ -6,6 +6,7 @@ import { checkAuthLoader } from "../../root/Root";
 import UserAuthentication from "../../../pages/User_authentication";
 import {action as authActions} from "../../../pages/User_authentication";
 import Profile from "../../../pages/Profile";
+import OrderHistory from "../../../components/overlay/OrderHistory";
 // For The Main Navigations
 const MainRouter = [
     {
@@ -18,7 +19,7 @@ const MainRouter = [
             {path: '/search', element: <div>SEARCH</div>, routeName: 'search'},
             {path: '/order', element: <div>Order</div>, routeName: 'order'},
             {path: '/profile', element: <Profile />, routeName: 'profile'},
-            {path: '/order-history', element: <div>order-history</div>, routeName: 'order-history'},
+            {path: '/order-history', element: <OrderHistory />, routeName: 'order-history'},
             {path: '/payment-method', element: <div>payment-method</div>, routeName: 'payment-method'},
             {path: '/my-address', element: <div>my-address</div>, routeName: 'my-address'},
             {path: '/my-promocodes', element: <div>my-promocodes</div>, routeName: 'my-promocodes'},

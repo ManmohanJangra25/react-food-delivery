@@ -35,6 +35,7 @@
     background: var(--light-grey);
     border-radius: 50%;
     position: relative;
+    background-size: cover !important;
   }
   
   .overlay_content_top .profile_image .image_edit{
