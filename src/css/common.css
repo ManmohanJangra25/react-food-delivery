@@ -11,6 +11,7 @@
     --white-main: #ffffff;
     --primary-gradient: linear-gradient(103deg, #FF7F56 0%, rgba(232, 57, 57, 0.80) 100%);
     --common-grey: #CACDD6;
+    --success: #00824B;
 
     /* Fonts */
     --poppins-font: 'Poppins', sans-serif;
@@ -63,3 +64,11 @@ body{
 }
 
 /* Orange Background Btn With Image Background */
+
+.text_success{
+    color: var(--success);
+}
+
+.text_failure{
+    color: var(--main-dark-orange);
+}

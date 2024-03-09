@@ -1,3 +1,81 @@
 .order_history_content{
     margin-top: 20px;
 }
+
+.order_history_content .restaurant_lists{
+    height: 108px;
+}
+
+.restaurant_delivery_status{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order_history_content .restaurant_list_right{
+    padding-right: 20px;
+}
+
+.order_history_content .restaurant_list_left{
+    width: 32%;
+}
+
+.order_history_content .restaurant_name_type{
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.order_history_content .delivery_status ,.order_history_content .delivery_ammount{
+    font-size: 14px;
+    line-height: 150%;
+    font-family: var(--mulish-font);
+    font-weight: 600;
+}
+
+.order_history_list{
+    margin: 25px 0;
+}
+
+.order_history_blocks{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.order_history_blocks .order_history_list_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    font-size: 14px;
+    line-height: 150%;
+    font-family: var(--mulish-font);
+    font-weight: 600;
+    color: var(--main-grey);
+}
+
+.order_history_blocks .order_history_list_item:last-child{
+    padding-bottom: 0;
+}
+
+.repeat_order_button{
+    background-color: var(--white-main);
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: var(--main-dark-orange);
+    font-family: var(--mulish-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order_history_bottom_list{
+    margin-top: 25px;
+}
